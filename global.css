@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url("icons.css");
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(217, 12%, 63%);
+    --mediumgray: hsl(213, 20%, 30%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 38.5%;
+    padding: 10px;
+    margin: 10px;
+    width: 62.5%;
+    height: 62.5%;
+}
+
+@media (min-width: 300px) {
+    html {
+        font-size: 44.5%;
+    }
+}
+
+@media (min-width: 376px) {
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 65.5%;
+    }
+}
+
+
+body {
+    background-color: var(--verydarkblue);
+}
+
+.disabled {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 41.5rem;
+    height: 42rem; 
+    border-radius: 30px;
+    background-color: var(--darkblue);
+    padding: 30px;
+}
+
+.card-header {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card-body h1 {
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.card-body p {
+    color: var(--lightgray);
+    font-size: 1.6rem;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+
+.card-header .icon-icon-star {
+    padding: 1.7rem;
+    font-size: 1.6rem;
+    background-color: var(--mediumgray);
+    border-radius: 50%;
+}
+
+#numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number {
+    position: relative;
+    background-color: var(--mediumgray);
+    display: inline-block;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.number.selected {
+    background-color: var(--orange);
+    pointer-events: none;
+}
+
+.number span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%,-50%);
+}
+
+.number:hover {
+    background-color: var(--lightgray);
+}
+
+.number:active {
+    background-color: var(--orange);
+}
+
+
+#button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 30px;
+    height: 5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1.5rem 3.2rem;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+#button:active {
+    color: var(--orange);
+    background-color: var(--white);
+    
+}
+
+#card-icon {
+    margin: 0;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.card-end .icon-illustration-thank-you {
+    font-size: 12rem;
+}
+
+.card-end .choice-text {
+    font-size: 1.7rem;
+    text-align: center;
+    display: inline-block;
+    margin: 4rem 0;
+    color: var(--orange);
+    background-color: var(--mediumgray);
+    border-radius: 30px;
+    width: 21rem;
+    padding: 0.6rem 0;
+}
+
+#info {
+    text-align: center;
+    height: 10.5rem;
+}
+
+.card-end h1 {
+    margin-top: 0;
+}
+
+.card-end .main-text {
+    text-align: center;
+}
+
+
